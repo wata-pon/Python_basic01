@@ -11,5 +11,7 @@ class BMI:
 
 
 bmi = BMI()
-bmi.height = int(input("身長、入力して-:")) / 100
+bmi.height = int(input("身長、入力して-(cm):")) / 100
+bmi.weight = int(input("体重、入力して-(kg):"))
 print(bmi.height)
+print(bmi.weight)
