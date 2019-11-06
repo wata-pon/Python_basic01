@@ -9,11 +9,11 @@
 class BMI:
 
     def calculate(self):
+        bmi.height = int(input("身長を入力(cm):")) / 100
+        bmi.weight = int(input("体重を入力(kg):"))
         return f'{self.weight / (self.height ** 2):.2f}'
 
 
 bmi = BMI()
-bmi.height = int(input("身長を入力(cm):")) / 100
-bmi.weight = int(input("体重を入力(kg):"))
 
 print('あなたのBMIは' + str(bmi.calculate()) + 'です。')
